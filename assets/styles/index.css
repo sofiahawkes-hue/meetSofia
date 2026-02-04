@@ -1,0 +1,110 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    /* The "frame" color around the page */
+    background-color: #000;
+}
+
+body {
+    margin: 30px; /* tweak to 5–10px */
+    padding: 0;
+    min-height: calc(100vh - 30px);
+
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFFCC;
+    font-family: 'Inter';
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #000;
+
+    /* Background image */
+    background-image: url('../images/shsf.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    padding: 4.5%;
+    border-radius: 15px;
+    background-color: #5a6770f0;
+    background: linear-gradient(45deg, #3c4045e3, #4b4e52ce);
+    
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 700px;
+    max-height: 500px;
+    gap: 4.5%;
+     
+}
+
+.left {
+
+    width: 40%;
+
+}
+
+.profile-pic {
+    /* "Profile picture" circle crop */
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+    /* Crop instead of squish */
+    object-fit: cover;
+
+    /*
+      Move the crop window to center your face/goat.
+      Try: 50% 15% (higher), 50% 25% (lower), or 55% 20% (slightly right)
+    */
+    object-position: 50% 20%;
+
+    /* Nice frame */
+    border: 3px solid #E3EBD829;
+
+    display: block;
+}
+
+.right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+} 
+
+.updates ul { 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.updates ul li {
+    border: 1px solid purple;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+p { 
+    font-size: .8em;
+}
+
+h1 {
+    font-size: 1.5em;
+}
