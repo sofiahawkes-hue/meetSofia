@@ -95,7 +95,7 @@ body {
 }
 
 .updates {
-    
+    padding-top: 1em;
 } 
 
 .updates ul { 
@@ -174,4 +174,41 @@ tbody tr:last-child td {
 
 tbody tr:hover {
     background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    body {
+        margin: 15px;
+        min-height: calc(100vh - 30px);
+    }
+
+    .container {
+        flex-direction: column;
+        width: 95%;
+        padding: 4% 5%;
+        max-width: 100%;
+    }
+
+    .left {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 2em;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .right {
+        padding-left: 0;
+        padding-top: 2em;
+    }
+
+    .profile-pic {
+        width: 140px;
+        height: 140px;
+    }
+
+    .updates ul {
+        flex-wrap: wrap;
+    }
 }
