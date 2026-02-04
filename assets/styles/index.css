@@ -8,6 +8,13 @@ html {
     background-color: #000;
 }
 
+.container .placeholder {
+    width: 100%;
+    text-align: center;
+    color: #FFFFFFAA;
+    font-size: 0.95em;
+}
+
 body {
     margin: 30px; /* tweak to 5–10px */
     padding: 0;
@@ -305,6 +312,22 @@ tbody tr:last-child td {
 
 tbody tr:hover {
     background-color: rgba(255, 255, 255, 0.02);
+}
+
+.footer {
+    width: 95%;
+    max-width: 100%;
+    margin-top: 1.5em;
+}
+
+.footer ul {
+    justify-content: center;
+    gap: 0.35em;
+}
+
+.footer a {
+    font-size: 0.8em;
+    padding: 0.45em 0.85em;
 }
 
 /* Mobile responsive styles */
